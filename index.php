@@ -22,7 +22,7 @@
             <h1>Welcome to Student Result Management System</h1>
             <p class="lead">Easily access and manage student results.</p>
             <div>
-                <a href="student_login.php" class="btn btn-primary btn-custom">Student Login</a>
+                <a href="student_result.php" class="btn btn-primary btn-custom">View Result</a>
                 <a href="admin_login.php" class="btn btn-secondary btn-custom">Admin Login</a>
             </div>
         </div>
