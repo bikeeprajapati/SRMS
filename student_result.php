@@ -143,7 +143,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>About SRMS</h3>
+                <h3>About SDC-BIM-SRMS</h3>
                 <p> SDC-BIM Student Result Management System is a comprehensive platform designed to manage and track academic performance efficiently.</p>
             </div>
             <div class="footer-section">

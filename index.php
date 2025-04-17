@@ -16,7 +16,7 @@
                 <svg viewBox="0 0 24 24">
                     <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/>
                 </svg>
-                <span>SDC-BIM-SRMS</span>
+                <span>SDC-BIM-RMS</span>
             </a>
             <button class="mobile-menu-btn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -71,7 +71,7 @@
     <!-- Enhanced Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
+            <div class="footer-section" id="about">
                 <h3>About SDC-BIM-RMS</h3>
                 <p>Shanker Dev BIM Student Result Management System is a comprehensive platform designed to manage and track academic performance efficiently.</p>
             </div>
@@ -84,11 +84,11 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
+            <div class="footer-section" id="contact">
                 <h3>Contact Info</h3>
-                <p>Email: info@srms.edu</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Address: 123 Education Street, Learning City</p>
+                <p>Email: shankerdevcampusbim@gmail.com</p>
+                <p>Phone: 015318016</p>
+                <p>Address: Ram Shah Path, Putalisadak, Kathmandu</p>
             </div>
         </div>
         <div class="footer-bottom">

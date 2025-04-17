@@ -11,11 +11,11 @@
     <!-- Sticky Header -->
     <header class="sticky-header">
         <nav class="nav-container">
-            <a href="index.html" class="logo">
+            <a href="index.php" class="logo">
                 <svg viewBox="0 0 24 24">
                     <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z"/>
                 </svg>
-                <span>SRMS</span>
+                <span>SDC-BIM-RMS</span>
             </a>
             <button class="mobile-menu-btn">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -26,8 +26,8 @@
                 <a href="index.php">Home</a>
                 <a href="student_result.php">Results</a>
                 <a href="admin_login.php">Admin</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="index.php#about">About</a>
+                <a href="index.php#contact">Contact</a>
             </div>
         </nav>
     </header>
