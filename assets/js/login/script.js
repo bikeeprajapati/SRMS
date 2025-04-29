@@ -8,53 +8,53 @@
         });
 
         // Form Submission Handler
-        function handleSubmit(e) {
-            e.preventDefault();
-            const loginBtn = document.getElementById('loginBtn');
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form values
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
-            const usernameError = document.getElementById('usernameError');
-            const passwordError = document.getElementById('passwordError');
-
+            
             // Reset error messages
-            usernameError.classList.remove('active');
-            passwordError.classList.remove('active');
-
-            // Basic validation
-            let hasError = false;
+            document.getElementById('usernameError').style.display = 'none';
+            document.getElementById('passwordError').style.display = 'none';
+            
+            // Validate form
+            let isValid = true;
+            
             if (!username) {
-                usernameError.classList.add('active');
-                hasError = true;
+                document.getElementById('usernameError').style.display = 'block';
+                isValid = false;
             }
+            
             if (!password) {
-                passwordError.classList.add('active');
-                hasError = true;
+                document.getElementById('passwordError').style.display = 'block';
+                isValid = false;
             }
-
-            if (hasError) return;
-
-            // Show loading state
-            loginBtn.classList.add('loading');
-
-            // Simulate API call (replace with actual authentication)
-            setTimeout(() => {
-                loginBtn.classList.remove('loading');
+            
+            // If form is valid, submit to server
+            if (isValid) {
+                // Create a form to submit
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = 'admin_auth.php';
                 
-                // Add your authentication logic here
-                // For demo purposes, using hardcoded credentials
-                if (username === 'admin' && password === 'admin123') {
-                    window.location.href = 'admin-dashboard.html';
-                } else {
-                    usernameError.textContent = 'Invalid username or password';
-                    usernameError.classList.add('active');
-                }
-            }, 2000);
-        }
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-container')) {
-                navLinks.classList.remove('active');
+                // Add username field
+                const usernameField = document.createElement('input');
+                usernameField.type = 'hidden';
+                usernameField.name = 'username';
+                usernameField.value = username;
+                form.appendChild(usernameField);
+                
+                // Add password field
+                const passwordField = document.createElement('input');
+                passwordField.type = 'hidden';
+                passwordField.name = 'password';
+                passwordField.value = password;
+                form.appendChild(passwordField);
+                
+                // Append form to body and submit
+                document.body.appendChild(form);
+                form.submit();
             }
-        });
-    
+        }
